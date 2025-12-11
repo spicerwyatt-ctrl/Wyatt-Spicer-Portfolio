@@ -9,7 +9,6 @@
   --border: #e0e2eb;
 }
 
-/* GLOBAL RESET */
 *,
 *::before,
 *::after {
@@ -30,8 +29,6 @@ body {
   line-height: 1.6;
 }
 
-/* LAYOUT UTILITIES */
-
 .container {
   width: 100%;
   max-width: 1100px;
@@ -46,8 +43,6 @@ body {
 .section-dark {
   background: var(--bg-alt);
 }
-
-/* HEADER / NAV */
 
 .site-header {
   position: sticky;
@@ -119,8 +114,6 @@ body {
 .main-nav a:hover::after {
   width: 100%;
 }
-
-/* HERO */
 
 .hero {
   position: relative;
@@ -206,9 +199,6 @@ body {
   gap: 0.75rem;
   margin-bottom: 1.1rem;
 }
-
-/* BUTTONS */
-
 .btn {
   display: inline-flex;
   align-items: center;
@@ -258,8 +248,6 @@ body {
   margin-top: 0.35rem;
 }
 
-/* SECTION HEADINGS & LAYOUT */
-
 .section-title {
   font-family: "Oswald", system-ui, sans-serif;
   font-size: 1.9rem;
@@ -296,8 +284,6 @@ body {
   color: var(--muted);
 }
 
-/* GRIDS / CARDS */
-
 .grid {
   display: grid;
   gap: 1.9rem;
@@ -331,8 +317,6 @@ body {
   margin-bottom: 0.55rem;
 }
 
-/* FAQ STYLE (if you use it) */
-
 .faq-item {
   border-top: 1px solid rgba(0, 0, 0, 0.06);
   padding: 1.2rem 0;
@@ -349,8 +333,6 @@ body {
   letter-spacing: 0.12em;
   margin: 0 0 0.35rem;
 }
-
-/* FOOTER */
 
 .site-footer {
   border-top: 1px solid rgba(0, 0, 0, 0.08);
@@ -391,8 +373,6 @@ body {
   margin-top: 0.6rem;
 }
 
-/* RESPONSIVE */
-
 @media (max-width: 768px) {
   .header-inner {
     flex-direction: row;
@@ -421,8 +401,6 @@ body {
   }
 }
 
-/* POSTER GRID (for HP posters / project thumbs) */
-
 .poster-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -446,8 +424,6 @@ body {
   transform: scale(1.03);
   box-shadow: 0 12px 40px rgba(15, 23, 42, 0.16);
 }
-
-/* CARD IMAGE (for project thumbnails inside cards) */
 
 .card-img {
   width: 100%;
@@ -490,8 +466,6 @@ body {
   box-shadow: 0 12px 40px rgba(15, 23, 42, 0.16);
 }
 
-/* VIDEO EMBED */
-
 .video-container {
   position: relative;
   width: 80%;
@@ -517,7 +491,7 @@ body {
 
 .persona-img {
   width: 100%;
-  max-width: 900px; /* keeps it crisp */
+  max-width: 900px;
   border-radius: 12px;
   margin: 1.5rem auto 2rem auto;
   display: block;
@@ -526,7 +500,7 @@ body {
 
 .persona-img2 {
   width: 100%;
-  max-width: 400px; /* keeps it crisp */
+  max-width: 400px;\
   border-radius: 12px;
   margin: 1.5rem auto 2rem auto;
   display: block;
@@ -535,7 +509,7 @@ body {
 
 .persona-img3 {
   width: 100%;
-  max-width: 1200px; /* keeps it crisp */
+  max-width: 1200px;
   border-radius: 12px;
   margin: 1.5rem auto 2rem auto;
   display: block;
@@ -544,7 +518,7 @@ body {
 
 .persona-img4 {
   width: 100%;
-  max-width: 400px; /* keeps it crisp */
+  max-width: 400px;
   border-radius: 12px;
   margin: 1.5rem auto 2rem auto;
   display: block;
@@ -553,7 +527,7 @@ body {
 
 .persona-img5 {
   width: 100%;
-  max-width: 700px; /* keeps it crisp */
+  max-width: 700px;
   border-radius: 12px;
   margin: 1.5rem auto 2rem auto;
   display: block;
@@ -563,7 +537,7 @@ body {
 .hero-video {
   position: relative;
   width: 100%;
-  height: 80vh; /* Adjust to 100vh for full screen */
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -576,4 +550,22 @@ body {
   transform: translate(-50%, -50%);
   object-fit: cover;
   z-index: 1;
+}
+
+.canva-embed {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  min-height: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  background: #f4f4f8;
+}
+
+.canva-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
 }
