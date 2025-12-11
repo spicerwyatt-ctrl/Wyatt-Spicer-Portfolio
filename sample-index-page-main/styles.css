@@ -1,11 +1,10 @@
 :root {
-  /* Softer, portfolio-friendly palette */
   --bg: #d9e1ef;
   --bg-alt: #ffffff;
   --text: #1e1f23;
   --muted: #6b6f7a;
   --accent: #315efb;
-  --accent-neon: #f27d42; /* now just a warm accent */
+  --accent-neon: #f27d42;
   --border: #e0e2eb;
 }
 
