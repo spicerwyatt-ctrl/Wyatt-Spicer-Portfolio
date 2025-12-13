@@ -555,15 +555,36 @@ body {
   }
 }
 
-@supports not (height: 1svh){
-  @media (max-width: 430px) and (orientation: portrait){
-    .hero-video{ height: 62vh; }
+@media (max-width: 430px) and (orientation: portrait){
+  .hero-video{
+    height: 58svh;
+    min-height: 320px;
+  }
+
+  .hero-video video{
+    object-position: 50% 25%;
   }
 }
 
-@supports (height: 100svh){
+@supports (height: 1dvh){
+  @media (max-width: 430px) and (orientation: portrait){
+    .hero-video{
+      height: 58dvh;
+    }
+  }
+}
+
+@supports (height: 1svh){
   .hero-video{
     height: clamp(420px, 70svh, 900px);
+  }
+}
+
+@supports not (height: 1svh){
+  @media (max-width: 430px) and (orientation: portrait){
+    .hero-video{
+      height: 58vh;
+    }
   }
 }
 
