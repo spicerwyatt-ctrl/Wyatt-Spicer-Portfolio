@@ -379,7 +379,7 @@ body {
   }
 
   .main-nav {
-    display: none; /* You could later swap this for a hamburger menu */
+    display: none;
   }
 
   .hero {
