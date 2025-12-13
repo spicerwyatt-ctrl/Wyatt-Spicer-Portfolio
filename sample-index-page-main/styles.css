@@ -549,6 +549,12 @@ body {
   display: block;
 }
 
+@media (max-width: 640px){
+  .hero-video video{
+    object-position: 50% 30%;
+  }
+}
+
 @supports (height: 100svh){
   .hero-video{
     height: clamp(420px, 70svh, 900px);
