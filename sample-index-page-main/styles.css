@@ -555,6 +555,12 @@ body {
   }
 }
 
+@supports not (height: 1svh){
+  @media (max-width: 430px) and (orientation: portrait){
+    .hero-video{ height: 62vh; }
+  }
+}
+
 @supports (height: 100svh){
   .hero-video{
     height: clamp(420px, 70svh, 900px);
